@@ -1,0 +1,11 @@
+---
+title: "Data Analysis!"
+---
+
+# Gapminder
+
+This dataset will have three pages: one showing the relationship between life expectancy and GDP per capita over time, one analyzing the relationship between life expectancy and population, and one analyzing changes in life expectancy, GDP per capita and population for a specific country over time.
+
+## [life expectancy and GDP per capita](life-gdp.qmd)
+## [life exectancy and population](life-population.qmd)
+## [changes in country](country.qmd)

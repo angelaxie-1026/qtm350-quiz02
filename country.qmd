@@ -1,0 +1,15 @@
+---
+title: "changes in country"
+---
+
+```{r}
+library(ggplot2)
+gapminder <- read.csv("gapminder.csv")
+
+ggplot(gapminder[gapminder$country == "China",], aes(x = year)) +
+  geom_line(aes(y = life_expectancy, color = "Life Expectancy")) +
+  geom_line(aes(y = gdp_per_capita, color = "GDP per Capita")) +
+  geom_line(aes(y = population_millions, color = "Population (in millions)")) +
+  labs(title = "Changes of Life Expectancy, GDP per Capita, and Population in China",
+       y = "")
+```

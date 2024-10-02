@@ -1,0 +1,15 @@
+---
+title: "life expectancy and GDP per capita"
+---
+
+```{r}
+library(ggplot2)
+gapminder <- read.csv("gapminder.csv")
+
+# to analyze life expectancy vs GDP per capita
+ggplot(gapminder, aes(x = life_expectancy, y = gdp_per_capita)) +
+  geom_point() +
+  labs(title = "Life Expectancy vs GDP per Capita",
+       x = "Life Expectancy",
+       y = "GDP per capita")
+```
